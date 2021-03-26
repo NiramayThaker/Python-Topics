@@ -1,4 +1,4 @@
-# Drawing sun kind of pattern using turtle graphics
+# Drawing sun pattern with turtle graphics
 
 import turtle
 
@@ -14,3 +14,9 @@ while i <= 30:
     timmy.forward(100)
     timmy.color("red")
     i += 1
+
+
+my_screen = turtle.Screen()
+my_screen.bgcolor('black')
+my_screen.title("Turtle_graphics")
+my_screen.exitonclick()
