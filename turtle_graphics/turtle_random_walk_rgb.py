@@ -12,17 +12,14 @@ def random_color_finder():
     return random_color
 
 
-tim = t.Turtle()
-tim.shape('turtle')
-
 directions = [0, 90, 180, 270]
-tim.pensize(15)
-tim.speed('fastest')
+t.pensize(15)
+t.speed('fastest')
 
 for _ in range(200):
-    tim.color(random_color_finder())
-    tim.forward(30)
-    tim.setheading(random.choice(directions))
+    t.color(random_color_finder())
+    t.forward(30)
+    t.setheading(random.choice(directions))
 
 my_screen = t.Screen()
 my_screen.bgcolor('black')
