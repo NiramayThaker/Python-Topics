@@ -28,8 +28,7 @@ def change_turtle_line():
 
 for _ in range(10):
     for dot in range(10):
-        tim.color(random.choice(colors))
-        tim.dot(size_of_dots)
+        tim.dot(size_of_dots, random.choice(colors))      # tim.color(random.choice(colors))
         tim.penup()
         tim.forward(space_between_dots)
         tim.pendown()
